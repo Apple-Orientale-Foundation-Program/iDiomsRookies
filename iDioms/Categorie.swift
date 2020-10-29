@@ -40,9 +40,6 @@ struct Categorie: View {
                 }
             }
             .navigationTitle(Text("Choose a card"))
-            
-        }
-        
         .navigationBarItems(trailing:
                                 NavigationLink (destination:
                                                     MyFavouriteList())
@@ -52,6 +49,7 @@ struct Categorie: View {
                                         .foregroundColor(.orange)
                                         .frame(width: 30, height: 30)
                                 })
+    }
         .fullScreenCover(isPresented: $isPresented) {
             OnBoarding()
         }

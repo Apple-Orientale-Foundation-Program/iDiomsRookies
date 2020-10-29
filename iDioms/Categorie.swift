@@ -26,7 +26,7 @@ struct Categorie: View {
                     
                     ForEach(categories.keys.sorted(), id:\.self) { key in NavigationLink(destination: IdiomsList(categoryName: key, items: self.categories[key]!))
                     {
-                        CardView(categoryName: key, idiom: idioms[0])
+                        CardView(categoryName: key)
                     }
                     
                     
@@ -35,7 +35,7 @@ struct Categorie: View {
                     NavigationLink(
                         destination: AllView(categoryName: "All", items: Array(idioms.prefix(60)))){
                         
-                        CardView(categoryName: "All", idiom: idioms[2])}
+                        CardView(categoryName: "All")}
                     
                 }
             }
@@ -69,7 +69,6 @@ struct Categorie: View {
 
 struct CardView: View {
     var categoryName: String
-    var idiom: Idiom
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0)
@@ -84,9 +83,9 @@ struct CardView: View {
                 
                 Spacer()
                 
-                Image(idiom.image)
+                Image(categoryName)
                     .resizable()
-                    .frame(width: 240, height: 140)
+                    .frame(width: 230, height: 140)
             }
         }
         .frame(width: 375, height: 200, alignment: .center)

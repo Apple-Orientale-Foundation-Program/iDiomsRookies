@@ -34,7 +34,7 @@ struct MyFavouriteList: View {
             .navigationBarItems(trailing:
                                         Image(systemName: "bookmark.fill")
                                             .resizable()
-                                            .foregroundColor(.orange)
+                                            .foregroundColor(Color("ourorange"))
                                             .frame(width: 20, height: 30)
                                     )
             .navigationBarTitle("MyFavourite")

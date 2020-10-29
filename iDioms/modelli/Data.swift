@@ -31,3 +31,7 @@ let idioms: [Idiom] = [
     
     Idiom(id: 6, name: "Notte in bianco", categoryCard: Idiom.Category.situations, image: "", isFavourite: false, meaningText: "Maria ha passato la notte in bianco perché sua figlia non smetteva di piangere.\n Mary spents a sleepless night because her daughter would not stop crying.", meaningTradu: "Spend the night without sleeping, all-nighter, sleepless night", historyText: "The idiom refers to a typical custom of the Medieval age, when the aspiring knights were preparing for the investiture ceremony.  They spent the night before this sacred moment praying and fasting, dressed completely in white.", linkapple: "https://apple.co/3oAGIBO", linkspotify: "https://open.spotify.com/track/3SDJvaXqt3pJS4lbLcv93G?si=a-7vAJkZTEmkRizIphFtNQ", linkyoutube: "https://www.youtube.com/watch?v=PoPOuP3dPM8")
 ]
+
+
+
+

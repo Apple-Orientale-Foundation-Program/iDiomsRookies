@@ -45,12 +45,14 @@ Spacer()
                                     if self.data.idiom[self.idiomIndex]
                                         .isFavourite == true {
                                         Image(systemName: "star.fill")
-                                            .frame(width: 30, height: 30)
-                                            .foregroundColor(Color.orange)
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor((Color("ourorange"))
                                     } else {
                                         Image(systemName: "star")
-                                            .frame(width: 30, height: 30)
-                                            .foregroundColor(Color.white)
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor((Color("ourorange"))
                                     }
                                 })
     }

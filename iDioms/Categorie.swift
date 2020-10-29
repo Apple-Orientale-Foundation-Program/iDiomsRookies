@@ -46,21 +46,21 @@ struct Categorie: View {
                                 {
                                     Image(systemName: "bookmark.circle.fill")
                                         .resizable()
-                                        .foregroundColor(.orange)
+                                        .foregroundColor(Color("ourorange"))
                                         .frame(width: 30, height: 30)
                                 })
     }
         .fullScreenCover(isPresented: $isPresented) {
             OnBoarding()
         }
-        
-    .onAppear {
-    
-    UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemGray6]
-    
-    //Use this if NavigationBarTitle is with displayMode = .inline
-    UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.systemGray6]
-    
+
+.onAppear {
+
+  UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+
+  //Use this if NavigationBarTitle is with displayMode = .inline
+   UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.orange]
+
     }
 }
 

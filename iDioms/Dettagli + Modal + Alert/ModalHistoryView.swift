@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ModalHistoryView: View {
- 
+    @Environment(\.presentationMode) var presentationMode
     @State var isPresented2: Bool = false
     @State var idiom: Idiom
     
@@ -17,13 +17,29 @@ struct ModalHistoryView: View {
             //qua il testo completo
         ZStack {
             Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)).edgesIgnoringSafeArea(.all)
+            
         VStack(alignment: .leading) {
-                    Text("\(idiom.name)")
+            HStack {
+                Text("\(idiom.name)")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        
+                Spacer()
+            Button(action:  {
+                presentationMode.wrappedValue.dismiss()
+            
+            })
+        {
+                Image(systemName: "xmark.circle.fill")
+                    .resizable()
+                     .frame(width: 25, height: 25, alignment: .center)
+                      .foregroundColor(Color("ourorange"))
+                
+            } .padding()
+        }
+        
+            
             Text("\(idiom.historyText)")
                 .font(.title3)
                 .foregroundColor(.white)
@@ -37,6 +53,6 @@ struct ModalHistoryView: View {
 
 struct ModalHistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalHistoryView(idiom: Idiom(id: 0, name: "HHHH", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "blabla", linkapple: "", linkspotify: "", linkyoutube: ""))
+        ModalHistoryView(idiom: idioms[0])
     }
 }

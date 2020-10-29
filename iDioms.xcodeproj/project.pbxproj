@@ -30,6 +30,7 @@
 		5B7CE111254AC1F1009E926A /* IdiomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10A254AC1F1009E926A /* IdiomDetail.swift */; };
 		5B7CE112254AC1F1009E926A /* MyFavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10B254AC1F1009E926A /* MyFavouriteList.swift */; };
 		5B7CE113254AC1F1009E926A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10C254AC1F1009E926A /* ListRow.swift */; };
+		5BD7A70B254AE2DA00FCB43E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7A70A254AE2DA00FCB43E /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		5B7CE10C254AC1F1009E926A /* ListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		5B7CE116254AC224009E926A /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		5B7CE117254AC224009E926A /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		5BD7A70A254AE2DA00FCB43E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7CE0D0254AC152009E926A /* iDiomsApp.swift */,
+				5BD7A70A254AE2DA00FCB43E /* SplashView.swift */,
 				5B7CE0D2254AC152009E926A /* Categorie.swift */,
 				5B05FA26254AD45B00DA9D42 /* AllView.swift */,
 				5B7CE10A254AC1F1009E926A /* IdiomDetail.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B7CE101254AC1E3009E926A /* OnBoarding1.swift in Sources */,
+				5BD7A70B254AE2DA00FCB43E /* SplashView.swift in Sources */,
 				5B7CE0F5254AC1D7009E926A /* MeaningCardView.swift in Sources */,
 				5B05FA27254AD45B00DA9D42 /* AllView.swift in Sources */,
 				5B7CE0F9254AC1D7009E926A /* ModalHistoryView.swift in Sources */,

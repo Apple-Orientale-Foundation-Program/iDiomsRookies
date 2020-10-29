@@ -40,7 +40,7 @@ struct Categorie: View {
                 }
             }
             .navigationTitle(Text("Choose a card"))
-            .accentColor(Color("ourorange"))
+            
         .navigationBarItems(trailing:
                                 NavigationLink (destination:
                                                     MyFavouriteList())

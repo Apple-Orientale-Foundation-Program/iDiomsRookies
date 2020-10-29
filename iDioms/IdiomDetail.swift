@@ -27,9 +27,9 @@ struct IdiomDetail: View {
             Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)).edgesIgnoringSafeArea(.all)
             VStack {
 
-                MeaningCardView(meaningTradu: idiom.meaningTradu, meaningText: idiom.meaningText, idioma: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+                MeaningCardView(meaningTradu: idiom.meaningTradu, meaningText: idiom.meaningText, idiom: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
                
-                HistoryCardView(historyText: idiom.historyText, idioma: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+                HistoryCardView(historyText: idiom.historyText, idiom: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
                 
                 SongCardView (linkapple: idiom.linkapple, linkspotify: idiom.linkspotify, linkyoutube: idiom.linkyoutube)
 Spacer()

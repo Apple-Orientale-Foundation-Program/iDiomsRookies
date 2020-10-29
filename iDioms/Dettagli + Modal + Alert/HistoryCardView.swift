@@ -11,8 +11,8 @@ struct HistoryCardView: View {
     @State private var showHistoryDetails = false
     @State var isPresented2: Bool = false
     @State var historyText: String
-    @State var idioma: Idiom
-    
+    @State var idiom: Idiom
+   
     var body: some View {
         
         ZStack {
@@ -42,7 +42,7 @@ struct HistoryCardView: View {
                             .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))}
                     
                     .sheet(isPresented: $isPresented2) {
-                        ModalHistoryView(idioma: Idiom (id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+                        ModalHistoryView(idiom: idiom)
                     }
                     
                     .padding(.trailing)
@@ -68,6 +68,7 @@ struct HistoryCardView: View {
 }
 struct HistoriesView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryCardView(historyText: "esempiostoria", idioma: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+        HistoryCardView(historyText: "ffffff", idiom: idioms[0])
     }
 }
+

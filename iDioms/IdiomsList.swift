@@ -8,6 +8,8 @@
 import SwiftUI
 import UIKit
 
+var selected = idioms[0]
+
 struct IdiomsList: View {
     var categoryName: String
     var items: [Idiom]

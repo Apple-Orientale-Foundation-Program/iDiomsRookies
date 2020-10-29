@@ -12,7 +12,7 @@ struct MeaningCardView: View {
     @State var isPresented1: Bool = false
     @State var meaningTradu: String
     @State var meaningText: String
-    @State var idioma: Idiom
+    @State var idiom: Idiom
     
     var body: some View {
         ZStack {
@@ -41,7 +41,7 @@ struct MeaningCardView: View {
                             .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))}
                     
                     .sheet(isPresented: $isPresented1) {
-                        ModalMeaningView(idioma: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+                        ModalMeaningView(idiom: idiom)
                     }
                 }
             
@@ -75,7 +75,7 @@ struct MeaningCardView: View {
 
 struct MeaningCardView_Previews: PreviewProvider {
     static var previews: some View {
-        MeaningCardView(meaningTradu: "esemp", meaningText: "esempio2", idioma: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
+        MeaningCardView(meaningTradu: "esemp", meaningText: "esempio2", idiom: Idiom(id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
     }
 }
 

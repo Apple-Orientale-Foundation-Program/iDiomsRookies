@@ -14,6 +14,7 @@ struct Onboarding3: View {
 //            NavigationView {
           VStack {
                         Text("Play the song")
+                            .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(Color("ourblue"))
                             .multilineTextAlignment(.center)
@@ -35,10 +36,6 @@ struct Onboarding3: View {
                         
                         .frame(width: 580.0, height: 443.0)
                        
-//                  .navigationBarItems(trailing:
-//                                                NavigationLink(destination: Categorie(items: idioms)){ Text ("Skip")})
-//
-    
             
     Spacer()
                  }

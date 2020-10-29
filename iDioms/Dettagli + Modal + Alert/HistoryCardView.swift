@@ -24,7 +24,8 @@ struct HistoryCardView: View {
                 HStack {
                     
                     Text("History")
-                        .font(.custom("SF Pro Rounded Bold", size:30))
+                        .font(.title3)
+                        .fontWeight(.bold)
                         .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                         .padding(.leading)
                     Spacer()
@@ -34,6 +35,8 @@ struct HistoryCardView: View {
                         self.isPresented2.toggle()
                     }) {
                         Image(systemName: "arrowtriangle.down.fill")
+                            .resizable()
+                            .frame(width: 15, height: 15, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.orange)
                             .shadow(radius: 10)
                             .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))}
@@ -47,8 +50,9 @@ struct HistoryCardView: View {
                 Spacer()
                 
                 HStack {
-                    Text(historyText)
-                        .font(.custom("SF Pro Rounded Regular", size:20))
+                    Text("\(historyText)")
+                        .font(.subheadline)
+                        .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                         .lineLimit(4)
                         .padding(.leading)

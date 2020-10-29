@@ -97,9 +97,9 @@
 				5B7CE10C254AC1F1009E926A /* ListRow.swift */,
 				5B7CE10B254AC1F1009E926A /* MyFavouriteList.swift */,
 				5B7CE107254AC1F0009E926A /* SearchBar.swift */,
-				5B7CE0E4254AC191009E926A /* modelli */,
+				5B7CE0E4254AC191009E926A /* Modelli */,
 				5B7CE0E5254AC19B009E926A /* Onboarding */,
-				5B7CE0E6254AC1A5009E926A /* pag 3 + modal + alert */,
+				5B7CE0E6254AC1A5009E926A /* Dettagli + Modal + Alert */,
 				5B7CE115254AC210009E926A /* Font */,
 				5B7CE0D4254AC153009E926A /* Assets.xcassets */,
 				5B7CE0D9254AC153009E926A /* Info.plist */,
@@ -116,13 +116,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5B7CE0E4254AC191009E926A /* modelli */ = {
+		5B7CE0E4254AC191009E926A /* Modelli */ = {
 			isa = PBXGroup;
 			children = (
 				5B7CE0E7254AC1BD009E926A /* Data.swift */,
 				5B7CE0EA254AC1C4009E926A /* Idiom.swift */,
 			);
-			path = modelli;
+			path = Modelli;
 			sourceTree = "<group>";
 		};
 		5B7CE0E5254AC19B009E926A /* Onboarding */ = {
@@ -137,17 +137,17 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		5B7CE0E6254AC1A5009E926A /* pag 3 + modal + alert */ = {
+		5B7CE0E6254AC1A5009E926A /* Dettagli + Modal + Alert */ = {
 			isa = PBXGroup;
 			children = (
 				5B7CE0ED254AC1CC009E926A /* ModalMeaningView.swift */,
-				5B7CE0F3254AC1D7009E926A /* HistoryCardView.swift */,
-				5B7CE0F1254AC1D7009E926A /* Icone.swift */,
-				5B7CE0F0254AC1D7009E926A /* MeaningCardView.swift */,
 				5B7CE0F4254AC1D7009E926A /* ModalHistoryView.swift */,
+				5B7CE0F3254AC1D7009E926A /* HistoryCardView.swift */,
+				5B7CE0F0254AC1D7009E926A /* MeaningCardView.swift */,
 				5B7CE0F2254AC1D7009E926A /* SongCardView.swift */,
+				5B7CE0F1254AC1D7009E926A /* Icone.swift */,
 			);
-			path = "pag 3 + modal + alert";
+			path = "Dettagli + Modal + Alert";
 			sourceTree = "<group>";
 		};
 		5B7CE115254AC210009E926A /* Font */ = {

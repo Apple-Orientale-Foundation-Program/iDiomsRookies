@@ -29,4 +29,9 @@ struct Idiom: Identifiable, Hashable {
         case situations = "Situations"
         case all = "All"
     }
-}
+//
+//    enum CategoryImages: String {
+//        case feelings = "dubbio 1"
+//        case action = "action 1"
+//        case situations = "situa 1"
+    }

@@ -19,12 +19,13 @@ struct ModalHistoryView: View {
             Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)).edgesIgnoringSafeArea(.all)
         VStack(alignment: .leading) {
                     Text("\(idioma.name)")
-                        .font(.custom("SF Pro Rounded Bold", size:30))
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
                         
             Text("\(idioma.historyText)")
-                .font(.custom("SF Pro Rounded Regular", size:24))
+                .font(.title3)
                 .foregroundColor(.white)
                         .padding()
                     

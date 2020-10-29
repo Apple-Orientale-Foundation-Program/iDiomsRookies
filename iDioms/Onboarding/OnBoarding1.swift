@@ -14,6 +14,7 @@ struct Onboarding1: View {
         VStack{
         VStack {
                     Text("Welcome to iDioms")
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color("ourblue"))
                         .multilineTextAlignment(.center)

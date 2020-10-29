@@ -28,7 +28,8 @@ struct SongCardView: View {
             VStack {
                 
                 Text("Play the song")
-                    .font(.custom("SF Pro Rounded Bold", size:26))
+                    .font(.title3)
+                    .fontWeight(.bold)
                     .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 200))
                 
@@ -48,7 +49,8 @@ struct SongCardView: View {
                         }
                         
                         Text("Go to min")
-                            .font(.custom("SF Pro Rounded Regular", size:19))
+                            .fontWeight(.regular)
+                            .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                             .multilineTextAlignment(.center)
                     }
@@ -69,7 +71,7 @@ struct SongCardView: View {
                         }
                         
                         Text("Go to min")
-                            .font(.custom("SF Pro Rounded Regular", size:19))
+                            .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .padding(.top)
@@ -92,7 +94,7 @@ struct SongCardView: View {
                         }
                         
                         Text("Go to min")
-                            .font(.custom("SF Pro Rounded Regular", size:19))
+                            .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                             .multilineTextAlignment(.center)
                     }

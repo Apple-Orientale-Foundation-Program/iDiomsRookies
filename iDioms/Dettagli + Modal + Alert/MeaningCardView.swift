@@ -23,15 +23,19 @@ struct MeaningCardView: View {
             VStack(alignment: .leading){
                 HStack {
                     Text("Meaning & Examples")
-                        .font(.custom("SF Pro Rounded Bold", size:26))
+                        .font(.title3)
+                        .fontWeight(.bold)
                         .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                         .padding(.leading)
+                    Spacer()
                     Spacer()
                     
                     Button(action: {
                         self.isPresented1.toggle()
                     }) {
                         Image(systemName: "arrowtriangle.down.fill")
+                            .resizable()
+                            .frame(width: 15, height: 15, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.orange)
                             .shadow(radius: 10)
                             .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))}
@@ -41,8 +45,9 @@ struct MeaningCardView: View {
                     }
                 }
             
-                    Text(meaningTradu)
-                        .font(.custom("SF Pro Rounded Bold", size:20))
+                Text("\(meaningTradu)")
+                    .font(.body)
+                   .fontWeight(.bold)
                   .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                    .padding(.top)
                   .padding(.bottom)
@@ -50,16 +55,19 @@ struct MeaningCardView: View {
                 
                 HStack {
                     Text("Ex:")
-                  .font(.custom("SF Pro Rounded Bold", size:20))
+                        .font(.subheadline)
+                        .fontWeight(.bold)
                  .bold()
                 .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))  +
-                    Text(meaningText)
-                        .font(.custom("SF Pro Rounded Regular", size:20))
+                    Text("\(meaningText)")
+                        .font(.subheadline)
+                        .fontWeight(.regular)
                 .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                 }
                 .padding(.leading)
               
             }
+            .padding(.trailing)
             .frame(width: 370, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
         }

@@ -14,6 +14,7 @@ struct Onboarding2: View {
         VStack {
           
             Text("Choose a card")
+                .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color("ourblue"))
                 .multilineTextAlignment(.center)

@@ -26,7 +26,7 @@ struct Categorie: View {
                     
                     ForEach(categories.keys.sorted(), id:\.self) { key in NavigationLink(destination: IdiomsList(categoryName: key, items: self.categories[key]!))
                     {
-                        CardView(categoryName: key, idiom: idioms[0])
+                        CardView(categoryName: key, idiom: idioms[5])
                     }
                     
                     
@@ -72,15 +72,16 @@ struct Categorie: View {
                     .foregroundColor(.white)
                 VStack{
                     Text(categoryName)
-                        .font(.custom("SF Pro Rounded Bold", size:30))
+                        .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
+                        .fontWeight(.bold)
                         .padding(7)
                     
                     Spacer()
                     
                     Image(idiom.image)
                         .resizable()
-                        .frame(width: 250, height: 150)
+                        .frame(width: 240, height: 140)
                 }
             }
             .frame(width: 375, height: 200, alignment: .center)

@@ -8,18 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		5B7CE0D1254AC152009E926A /* iDiomsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0D0254AC152009E926A /* iDiomsApp.swift */; };
-		5B7CE0D3254AC152009E926A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0D2254AC152009E926A /* ContentView.swift */; };
+		5B7CE0D3254AC152009E926A /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0D2254AC152009E926A /* Categorie.swift */; };
 		5B7CE0D5254AC153009E926A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CE0D4254AC153009E926A /* Assets.xcassets */; };
 		5B7CE0D8254AC153009E926A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CE0D7254AC153009E926A /* Preview Assets.xcassets */; };
+		5B7CE0E8254AC1BD009E926A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0E7254AC1BD009E926A /* Data.swift */; };
+		5B7CE0EB254AC1C4009E926A /* Idiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0EA254AC1C4009E926A /* Idiom.swift */; };
+		5B7CE0EE254AC1CC009E926A /* ModalMeaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0ED254AC1CC009E926A /* ModalMeaningView.swift */; };
+		5B7CE0F5254AC1D7009E926A /* MeaningCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0F0254AC1D7009E926A /* MeaningCardView.swift */; };
+		5B7CE0F6254AC1D7009E926A /* Icone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0F1254AC1D7009E926A /* Icone.swift */; };
+		5B7CE0F7254AC1D7009E926A /* SongCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0F2254AC1D7009E926A /* SongCardView.swift */; };
+		5B7CE0F8254AC1D7009E926A /* HistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0F3254AC1D7009E926A /* HistoryCardView.swift */; };
+		5B7CE0F9254AC1D7009E926A /* ModalHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0F4254AC1D7009E926A /* ModalHistoryView.swift */; };
+		5B7CE100254AC1E3009E926A /* OnBoarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0FB254AC1E2009E926A /* OnBoarding2.swift */; };
+		5B7CE101254AC1E3009E926A /* OnBoarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0FC254AC1E2009E926A /* OnBoarding1.swift */; };
+		5B7CE102254AC1E3009E926A /* OnBoarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0FD254AC1E3009E926A /* OnBoarding3.swift */; };
+		5B7CE103254AC1E3009E926A /* Pallinii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0FE254AC1E3009E926A /* Pallinii.swift */; };
+		5B7CE104254AC1E3009E926A /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE0FF254AC1E3009E926A /* OnBoarding.swift */; };
+		5B7CE10E254AC1F1009E926A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE107254AC1F0009E926A /* SearchBar.swift */; };
+		5B7CE10F254AC1F1009E926A /* IdiomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE108254AC1F1009E926A /* IdiomsList.swift */; };
+		5B7CE111254AC1F1009E926A /* IdiomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10A254AC1F1009E926A /* IdiomDetail.swift */; };
+		5B7CE112254AC1F1009E926A /* MyFavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10B254AC1F1009E926A /* MyFavouriteList.swift */; };
+		5B7CE113254AC1F1009E926A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CE10C254AC1F1009E926A /* ListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B7CE0CD254AC152009E926A /* iDioms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDioms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7CE0D0254AC152009E926A /* iDiomsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDiomsApp.swift; sourceTree = "<group>"; };
-		5B7CE0D2254AC152009E926A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B7CE0D2254AC152009E926A /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		5B7CE0D4254AC153009E926A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7CE0D7254AC153009E926A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B7CE0D9254AC153009E926A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7CE0E7254AC1BD009E926A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5B7CE0EA254AC1C4009E926A /* Idiom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idiom.swift; sourceTree = "<group>"; };
+		5B7CE0ED254AC1CC009E926A /* ModalMeaningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalMeaningView.swift; sourceTree = "<group>"; };
+		5B7CE0F0254AC1D7009E926A /* MeaningCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningCardView.swift; sourceTree = "<group>"; };
+		5B7CE0F1254AC1D7009E926A /* Icone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icone.swift; sourceTree = "<group>"; };
+		5B7CE0F2254AC1D7009E926A /* SongCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCardView.swift; sourceTree = "<group>"; };
+		5B7CE0F3254AC1D7009E926A /* HistoryCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCardView.swift; sourceTree = "<group>"; };
+		5B7CE0F4254AC1D7009E926A /* ModalHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalHistoryView.swift; sourceTree = "<group>"; };
+		5B7CE0FB254AC1E2009E926A /* OnBoarding2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding2.swift; sourceTree = "<group>"; };
+		5B7CE0FC254AC1E2009E926A /* OnBoarding1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding1.swift; sourceTree = "<group>"; };
+		5B7CE0FD254AC1E3009E926A /* OnBoarding3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding3.swift; sourceTree = "<group>"; };
+		5B7CE0FE254AC1E3009E926A /* Pallinii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pallinii.swift; sourceTree = "<group>"; };
+		5B7CE0FF254AC1E3009E926A /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		5B7CE107254AC1F0009E926A /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5B7CE108254AC1F1009E926A /* IdiomsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomsList.swift; sourceTree = "<group>"; };
+		5B7CE10A254AC1F1009E926A /* IdiomDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomDetail.swift; sourceTree = "<group>"; };
+		5B7CE10B254AC1F1009E926A /* MyFavouriteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFavouriteList.swift; sourceTree = "<group>"; };
+		5B7CE10C254AC1F1009E926A /* ListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		5B7CE116254AC224009E926A /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		5B7CE117254AC224009E926A /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +91,16 @@
 			isa = PBXGroup;
 			children = (
 				5B7CE0D0254AC152009E926A /* iDiomsApp.swift */,
-				5B7CE0D2254AC152009E926A /* ContentView.swift */,
+				5B7CE0D2254AC152009E926A /* Categorie.swift */,
+				5B7CE10A254AC1F1009E926A /* IdiomDetail.swift */,
+				5B7CE108254AC1F1009E926A /* IdiomsList.swift */,
+				5B7CE10C254AC1F1009E926A /* ListRow.swift */,
+				5B7CE10B254AC1F1009E926A /* MyFavouriteList.swift */,
+				5B7CE107254AC1F0009E926A /* SearchBar.swift */,
+				5B7CE0E4254AC191009E926A /* modelli */,
+				5B7CE0E5254AC19B009E926A /* Onboarding */,
+				5B7CE0E6254AC1A5009E926A /* pag 3 + modal + alert */,
+				5B7CE115254AC210009E926A /* Font */,
 				5B7CE0D4254AC153009E926A /* Assets.xcassets */,
 				5B7CE0D9254AC153009E926A /* Info.plist */,
 				5B7CE0D6254AC153009E926A /* Preview Content */,
@@ -67,6 +114,49 @@
 				5B7CE0D7254AC153009E926A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B7CE0E4254AC191009E926A /* modelli */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CE0E7254AC1BD009E926A /* Data.swift */,
+				5B7CE0EA254AC1C4009E926A /* Idiom.swift */,
+			);
+			path = modelli;
+			sourceTree = "<group>";
+		};
+		5B7CE0E5254AC19B009E926A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CE0FF254AC1E3009E926A /* OnBoarding.swift */,
+				5B7CE0FC254AC1E2009E926A /* OnBoarding1.swift */,
+				5B7CE0FB254AC1E2009E926A /* OnBoarding2.swift */,
+				5B7CE0FD254AC1E3009E926A /* OnBoarding3.swift */,
+				5B7CE0FE254AC1E3009E926A /* Pallinii.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5B7CE0E6254AC1A5009E926A /* pag 3 + modal + alert */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CE0ED254AC1CC009E926A /* ModalMeaningView.swift */,
+				5B7CE0F3254AC1D7009E926A /* HistoryCardView.swift */,
+				5B7CE0F1254AC1D7009E926A /* Icone.swift */,
+				5B7CE0F0254AC1D7009E926A /* MeaningCardView.swift */,
+				5B7CE0F4254AC1D7009E926A /* ModalHistoryView.swift */,
+				5B7CE0F2254AC1D7009E926A /* SongCardView.swift */,
+			);
+			path = "pag 3 + modal + alert";
+			sourceTree = "<group>";
+		};
+		5B7CE115254AC210009E926A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CE117254AC224009E926A /* SF-Pro-Rounded-Bold.otf */,
+				5B7CE116254AC224009E926A /* SF-Pro-Rounded-Regular.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +228,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7CE0D3254AC152009E926A /* ContentView.swift in Sources */,
+				5B7CE101254AC1E3009E926A /* OnBoarding1.swift in Sources */,
+				5B7CE0F5254AC1D7009E926A /* MeaningCardView.swift in Sources */,
+				5B7CE0F9254AC1D7009E926A /* ModalHistoryView.swift in Sources */,
+				5B7CE10F254AC1F1009E926A /* IdiomsList.swift in Sources */,
+				5B7CE0F7254AC1D7009E926A /* SongCardView.swift in Sources */,
+				5B7CE104254AC1E3009E926A /* OnBoarding.swift in Sources */,
+				5B7CE0EB254AC1C4009E926A /* Idiom.swift in Sources */,
+				5B7CE113254AC1F1009E926A /* ListRow.swift in Sources */,
+				5B7CE111254AC1F1009E926A /* IdiomDetail.swift in Sources */,
+				5B7CE0F6254AC1D7009E926A /* Icone.swift in Sources */,
+				5B7CE0D3254AC152009E926A /* Categorie.swift in Sources */,
+				5B7CE102254AC1E3009E926A /* OnBoarding3.swift in Sources */,
+				5B7CE0E8254AC1BD009E926A /* Data.swift in Sources */,
+				5B7CE100254AC1E3009E926A /* OnBoarding2.swift in Sources */,
+				5B7CE0EE254AC1CC009E926A /* ModalMeaningView.swift in Sources */,
+				5B7CE0F8254AC1D7009E926A /* HistoryCardView.swift in Sources */,
 				5B7CE0D1254AC152009E926A /* iDiomsApp.swift in Sources */,
+				5B7CE112254AC1F1009E926A /* MyFavouriteList.swift in Sources */,
+				5B7CE10E254AC1F1009E926A /* SearchBar.swift in Sources */,
+				5B7CE103254AC1E3009E926A /* Pallinii.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

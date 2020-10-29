@@ -11,7 +11,8 @@ import SwiftUI
 struct iDiomsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Categorie(items: Array(idioms.prefix(6)))
+                .environmentObject(Data())
         }
     }
 }

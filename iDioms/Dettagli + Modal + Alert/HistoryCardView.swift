@@ -42,7 +42,7 @@ struct HistoryCardView: View {
                             .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 0))}
                     
                     .sheet(isPresented: $isPresented2) {
-                        ModalHistoryView(idioma: Idiom (id: 0, name: "bb", categoryCard: Idiom.Category.action, image: "bb", isFavourite: false, meaningText: "bb", meaningTradu: "bb", historyText: "bb", linkapple: "", linkspotify: "", linkyoutube: ""))
+                        ModalHistoryView(idioma: Idiom (id: 0, name: "", categoryCard: Idiom.Category.action, image: "", isFavourite: false, meaningText: "", meaningTradu: "", historyText: "", linkapple: "", linkspotify: "", linkyoutube: ""))
                     }
                     
                     .padding(.trailing)

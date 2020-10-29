@@ -15,7 +15,8 @@ struct SplashView: View {
             // 2.
             if self.isActive {
                 // 3.
-                OnBoarding()
+                Categorie(items: Array(idioms.prefix(2)))
+                    .environmentObject(Data())
             } else {
                 // 4.
                 ZStack {
@@ -29,7 +30,7 @@ struct SplashView: View {
         // 5.
         .onAppear {
             // 6.
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 // 7.
                 withAnimation {
                     self.isActive = true

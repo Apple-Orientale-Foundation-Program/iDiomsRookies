@@ -36,7 +36,7 @@ Spacer()
             }
         }
         .navigationTitle("\(idiom.name)")
-        .font(.custom("SF Pro Rounded Bold", size:30))
+        .font(.subheadline)
         .navigationBarItems(trailing:
                                 
                                 Button(action: {

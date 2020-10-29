@@ -45,7 +45,7 @@ struct Categorie: View {
                               Image(systemName: "bookmark.circle.fill")
                                 .resizable()
                                  .foregroundColor(.orange)
-                                   .frame(width: 35, height: 35)
+                                   .frame(width: 30, height: 30)
               })
         }
         .fullScreenCover(isPresented: $isPresented) {

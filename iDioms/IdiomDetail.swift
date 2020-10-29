@@ -47,12 +47,12 @@ Spacer()
                                         Image(systemName: "star.fill")
                                             .resizable()
                                             .frame(width: 25, height: 25)
-                                            .foregroundColor((Color("ourorange"))
+                                            .foregroundColor(Color("ourorange"))
                                     } else {
                                         Image(systemName: "star")
                                             .resizable()
                                             .frame(width: 25, height: 25)
-                                            .foregroundColor((Color("ourorange"))
+                                            .foregroundColor(Color("ourorange"))
                                     }
                                 })
     }

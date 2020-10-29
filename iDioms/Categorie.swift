@@ -40,6 +40,7 @@ struct Categorie: View {
                 }
             }
             .navigationTitle(Text("Choose a card"))
+            .accentColor(Color("ourorange"))
         .navigationBarItems(trailing:
                                 NavigationLink (destination:
                                                     MyFavouriteList())
@@ -49,7 +50,8 @@ struct Categorie: View {
                                         .foregroundColor(Color("ourorange"))
                                         .frame(width: 30, height: 30)
                                 })
-    }
+    }.accentColor(Color("ourorange"))
+        
         .fullScreenCover(isPresented: $isPresented) {
             OnBoarding()
         }
@@ -57,6 +59,7 @@ struct Categorie: View {
 .onAppear {
 
   UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+
 
   //Use this if NavigationBarTitle is with displayMode = .inline
    UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.orange]

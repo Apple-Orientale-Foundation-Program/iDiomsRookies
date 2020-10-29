@@ -35,7 +35,7 @@ struct Categorie: View {
                     NavigationLink(
                         destination: AllView(categoryName: "All", items: Array(idioms.prefix(60)))){
                         
-                        CardView(categoryName: "All", idiom: idioms[0])}
+                        CardView(categoryName: "All", idiom: idioms[2])}
                     
                 }
             }

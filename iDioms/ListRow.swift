@@ -12,6 +12,8 @@ struct ListRow: View {
     
     var body: some View {
         Text("\(idiom.name)")
+            .fontWeight(.bold)
+            .foregroundColor( Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
     }
 }
 

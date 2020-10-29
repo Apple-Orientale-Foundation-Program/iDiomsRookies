@@ -33,6 +33,7 @@ struct AllView: View {
               
         }
             .navigationBarTitle(categoryName)
+            .foregroundColor( Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
     }
 
     }

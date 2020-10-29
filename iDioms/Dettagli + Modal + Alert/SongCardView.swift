@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct SongCardView: View {
-    @State private var showingAlert = false
+    @State private var showingAlertApple = false
+    @State private var showingAlertSpotify = false
+    @State private var showingAlertYoutube = false
+    
+    @State private var showingWebViewApple = false
+    @State private var showingWebViewSpotify = false
+    @State private var showingWebViewYoutube = false
+    
     @State private var showAppleMusicDetails = false
     @State private var showSpotifyDetails = false
     @State private var showYoutubeDetails = false
     
-    @State var linkapple: String
-    @State var linkspotify: String
-    @State var linkyoutube: String
+    var idiom: Idiom
+//    @State var linkapple: String
+//    @State var linkspotify: String
+//    @State var linkyoutube: String
+//
+    
     
     var body: some View {
         
@@ -35,20 +45,34 @@ struct SongCardView: View {
                 
                 HStack{
                     Spacer()
+                    
+                    
                     //apple music
                     VStack {
+                       
                         Button(action: {
-                            self.showingAlert = true
+                            self.showingAlertApple = true
                         }) {
-                            Image("appleMusicIcon")
-                                .foregroundColor(.orange)
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .shadow(radius: 10) }
-                        .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow")))
+                            VStack {
+                                NavigationLink(
+                                    destination: WebView(website: idiom.linkapple),
+                                    isActive: $showingWebViewApple,
+                                    label: {
+                                        EmptyView()
+                                    })
+                                Image("appleMusicIcon")
+                                    .foregroundColor(.orange)
+                                    .frame(width: 100, height: 65, alignment: .center)
+                                    .shadow(radius: 10)
+                            } }
+                        .alert(isPresented: $showingAlertApple) {
+                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow"), action: {
+                                self.activateWebViewApple()
+                                
+                            }))
                         }
                         
-                        Text("Go to min")
+                        Text("Go to min \n 1:10")
                             .fontWeight(.regular)
                             .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
@@ -56,21 +80,36 @@ struct SongCardView: View {
                     }
                     Spacer()
                     
+                    
+                    
+                    
                     //spotify
                     VStack {
                         Button(action: {
-                            self.showingAlert = true
+                            self.showingAlertSpotify = true
                         }) {
-                            Image("spotifyIcon")
-                                .foregroundColor(.orange)
-                                .padding(.leading, 2.0)
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 51, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .shadow(radius: 10) }
-                        .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow")))
+                            VStack {
+                                NavigationLink(
+                                    destination: WebView(website: idiom.linkspotify),
+                                    isActive: $showingWebViewSpotify,
+                                    label: {
+                                        EmptyView()
+                                    })
+                                Image("spotifyIcon")
+                                    .foregroundColor(.orange)
+                                    .padding(.leading, 2.0)
+                                    .frame(width: 100, height: 51, alignment: .center)
+                                    .shadow(radius: 10)
+                            } }
+                        .alert(isPresented: $showingAlertSpotify) {
+                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow"), action: {
+                                self.activateWebViewSpotify()
+                                
+                            }))
                         }
                         
-                        Text("Go to min")
+                        
+                        Text("Go to min \n 1:10")
                             .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                             .multilineTextAlignment(.center)
@@ -79,21 +118,35 @@ struct SongCardView: View {
                     
                     Spacer()
                     
+                    
+                    
+                    
                     //youtube
                     VStack {
                         Button(action: {
-                            self.showingAlert = true
+                            self.showingAlertYoutube = true
                         }) {
-                            Image("youtubeIcon")
-                                .foregroundColor(.orange)
-                                .frame(width: 100, height: 65, alignment: .bottom)
-                                .shadow(radius: 10)}
+                            VStack {
+                                NavigationLink(
+                                    destination: WebView(website: idiom.linkyoutube),
+                                    isActive: $showingWebViewYoutube,
+                                    label: {
+                                        EmptyView()
+                                    })
+                                Image("youtubeIcon")
+                                    .foregroundColor(.orange)
+                                    .frame(width: 100, height: 65, alignment: .bottom)
+                                    .shadow(radius: 10)
+                            }}
                         
-                        .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow")))
+                        .alert(isPresented: $showingAlertYoutube) {
+                            Alert(title: Text("Alert"), message: Text("You will move to another app"), primaryButton: .default(Text("Cancel")), secondaryButton: .default(Text("Allow"), action: {
+                                self.activateWebViewYoutube()
+                                
+                            }))
                         }
                         
-                        Text("Go to min")
+                        Text("Go to min \n 1:10")
                             .font(.subheadline)
                             .foregroundColor(Color(#colorLiteral(red: 0.03529411765, green: 0.1490196078, blue: 0.4352941176, alpha: 1)))
                             .multilineTextAlignment(.center)
@@ -102,14 +155,39 @@ struct SongCardView: View {
                 }
             }
         }
-        .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .frame(width: 375, height: 200, alignment: .center)
         .padding(.top)
         
     }
+    func gotoapplelink() -> WebView {
+        return WebView(website: idiom.linkapple)
+    }
+    func gotospotifylink() -> WebView {
+        return WebView(website: idiom.linkspotify)
+    }
+    func gotoyoutubelink() -> WebView {
+        return WebView(website: idiom.linkyoutube)
+    }
+    func activateWebViewApple() {
+        DispatchQueue.main.async {
+            self.showingWebViewApple = true
+        }
+    }
+    func activateWebViewSpotify() {
+        DispatchQueue.main.async {
+            self.showingWebViewSpotify = true
+        }
+    }
+    func activateWebViewYoutube() {
+        DispatchQueue.main.async {
+            self.showingWebViewYoutube = true
+        }
+    }
+    
 }
 
 struct SongCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SongCardView(linkapple: "", linkspotify: "" , linkyoutube: "")
+        SongCardView(idiom: idioms[0])
     }
 }

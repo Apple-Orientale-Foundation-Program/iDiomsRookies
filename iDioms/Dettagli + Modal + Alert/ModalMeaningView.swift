@@ -39,12 +39,25 @@ struct ModalMeaningView: View {
     }
             
             
-            Text("\(idiom.meaningText)")
+            Text("\(idiom.meaningTradu)")
                 .font(.title3)
+                .fontWeight(.bold)
                 .foregroundColor(.white)
                         .padding()
-                    
-                    Spacer()
+            
+            HStack{ Text("Ex:")
+                .font(.title3)
+                .fontWeight(.bold)
+         .bold()
+                .foregroundColor(.white)  +
+                Text("\(idiom.meaningText)")
+                .font(.title3)
+                .fontWeight(.regular)
+                .foregroundColor(.white)
+            
+            } .padding(.leading)
+            Spacer()
+            
                 }
            }
        }

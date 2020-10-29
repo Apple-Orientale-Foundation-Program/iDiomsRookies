@@ -5,7 +5,6 @@
 //  Created by Francesca Russo on 26/10/2020.
 //
 
-
 import SwiftUI
 
 struct IdiomDetail: View {
@@ -28,7 +27,7 @@ struct IdiomDetail: View {
             VStack {
                 MeaningCardView(meaningTradu: idiom.meaningTradu, meaningText: idiom.meaningText, idiom: idiom)
                 HistoryCardView(historyText: idiom.historyText, idiom: idiom)
-                SongCardView (linkapple: idiom.linkapple, linkspotify: idiom.linkspotify, linkyoutube: idiom.linkyoutube)
+                SongCardView (idiom: idiom)
               Spacer()
             }
         }

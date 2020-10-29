@@ -26,7 +26,7 @@ struct Categorie: View {
                     
                     ForEach(categories.keys.sorted(), id:\.self) { key in NavigationLink(destination: IdiomsList(categoryName: key, items: self.categories[key]!))
                     {
-                        CardView(categoryName: key, idiom: idioms[5])
+                        CardView(categoryName: key, idiom: idioms[0])
                     }
                     
                     
